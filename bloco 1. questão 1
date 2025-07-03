@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int inteiro = 10;
+    float flutuante = 3.14f;
+    double preciso = 2.71828;
+    char letra = 'A';
+    bool ligado = true;
+
+    cout << inteiro << " " << flutuante << " " << preciso << " " << letra << " " << ligado << endl;
+
+    return 0;
+}
