@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+float calcularAreaRetangulo(float base, float altura) {
+    return base * altura;
+}
+
+int main() {
+    float b, h;
+
+    cout << "Digite a base do retângulo: ";
+    cin >> b;
+    cout << "Digite a altura do retângulo: ";
+    cin >> h;
+
+    cout << "A área do retângulo é: " << calcularAreaRetangulo(b, h) << endl;
+
+    return 0;
+}
