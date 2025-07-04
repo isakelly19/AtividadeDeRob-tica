@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+void dobrar(int* p) {
+    *p *= 2;
+}
+
+int main() {
+    int numero = 5;
+
+    cout << "Antes: " << numero << endl;
+    dobrar(&numero);
+    cout << "Depois: " << numero << endl;
+
+    return 0;
+}
