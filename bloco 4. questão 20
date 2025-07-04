@@ -1,0 +1,22 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+void situacao(string nome, float nota) {
+    cout << nome << (nota >= 7 ? " está aprovado" : " está reprovado") << endl;
+}
+
+int main() {
+    string aluno;
+    float nota;
+
+    cout << "Digite o nome do aluno: ";
+    getline(cin, aluno);
+
+    cout << "Digite a nota do aluno: ";
+    cin >> nota;
+
+    situacao(aluno, nota);
+
+    return 0;
+}
