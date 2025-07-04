@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+void trocarRef(int &a, int &b) {
+    int temp = a;
+    a = b;
+    b = temp;
+}
+
+int main() {
+    int x = 15, y = 30;
+
+    cout << "Antes da troca: x = " << x << ", y = " << y << endl;
+    trocarRef(x, y);
+    cout << "Depois da troca: x = " << x << ", y = " << y << endl;
+
+    return 0;
+}
