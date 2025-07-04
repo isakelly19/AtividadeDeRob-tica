@@ -1,0 +1,6 @@
+int main() {
+    int x = 5, y = 10;
+    trocarValores(x, y);
+    cout << "x = " << x << ", y = " << y << endl;
+    return 0;
+}
