@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+
+float saldo = 1000;
+
+bool saque(float valor) {
+    if (valor <= 0) {
+        cout << "Valor inválido para saque." << endl;
+        return false;
+    }
+    if (valor <= saldo) {
+        saldo -= valor;
+        cout << "Saque de " << valor << " realizado com sucesso." << endl;
+        return true;
+    } else {
+        cout << "Saldo insuficiente." << endl;
+        return false;
+    }
+}
+
+int main() {
+    float valor;
+    cout << "Saldo inicial: " << saldo << endl;
+    cout << "Digite o valor do saque: ";
+    cin >> valor;
+
+    saque(valor);
+    cout << "Saldo atual: " << saldo << endl;
+
+    return 0;
+}
