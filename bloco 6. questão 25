@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int soma(int x, int y) {
+    return x + y;
+}
+
+void menu() {
+    int op, a, b;
+    cout << "Digite a operação (1-soma, 2-subtracao, 3-multiplicacao) e dois números: ";
+    cin >> op >> a >> b;
+
+    if (op == 1) cout << "Resultado: " << soma(a, b) << endl;
+    else if (op == 2) cout << "Resultado: " << a - b << endl;
+    else if (op == 3) cout << "Resultado: " << a * b << endl;
+    else cout << "Operação inválida!" << endl;
+}
+
+int main() {
+    menu();
+    return 0;
+}
