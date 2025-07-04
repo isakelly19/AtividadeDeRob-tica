@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+float saldo = 1000;
+
+void deposito(float valor) {
+    if (valor > 0) {
+        saldo += valor;
+        cout << "Depósito de " << valor << " realizado com sucesso." << endl;
+    } else {
+        cout << "Valor inválido para depósito." << endl;
+    }
+}
+
+int main() {
+    float valor;
+    cout << "Saldo inicial: " << saldo << endl;
+
+    cout << "Digite o valor do depósito: ";
+    cin >> valor;
+
+    deposito(valor);
+
+    cout << "Saldo atual: " << saldo << endl;
+
+    return 0;
+}
