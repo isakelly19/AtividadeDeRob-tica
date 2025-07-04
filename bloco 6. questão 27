@@ -12,16 +12,18 @@ void deposito(float valor) {
     }
 }
 
-int main() {
-    float valor;
-    cout << "Saldo inicial: " << saldo << endl;
-
-    cout << "Digite o valor do depósito: ";
-    cin >> valor;
-
-    deposito(valor);
-
+void consulta() {
     cout << "Saldo atual: " << saldo << endl;
+}
+
+int main() {
+    consulta();
+
+    deposito(500);
+    consulta();
+
+    deposito(-100);  // Valor inválido
+    consulta();
 
     return 0;
 }
